@@ -4,7 +4,8 @@ body {
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
   height: 4000px;
   text-transform: capitalize;
-  background: #FFF; }
+  background: #FFF;
+  font-family: 'Cairo', sans-serif; }
 
 /******over wrighting bootstrap *****/
 .navbar-default {
@@ -36,6 +37,9 @@ body {
 .navbar-default .navbar-nav > li > a {
   color: #fff;
   text-transform: uppercase; }
+
+.navbar-collapse {
+  max-height: 46.2vw !important; }
 
 .carousel-inner > .item > img {
   min-width: 100vw; }

@@ -2,17 +2,17 @@
 $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
-$mainFontSize: 10px; /*---end the var---*/
-
+$mainFontSize: 10px;
+/*---end the var---*/
 body {
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
   height: 4000px;
   text-transform: capitalize;
   background: #FFF;
+  font-family: 'Cairo', sans-serif;
   // font-size: $fontSizeFix * 1.6;
 }
 /******over wrighting bootstrap *****/
-
 .navbar-default {
   border-color: transparent;
   background-color: transparent;
@@ -50,6 +50,10 @@ body {
   text-transform: uppercase;
 }
 
+.navbar-collapse {
+  max-height: $fontSizeFix * 70 !important;
+}
+
 .carousel-inner > .item > img {
   min-width: 100vw;
 }
@@ -58,7 +62,6 @@ body {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
-
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
