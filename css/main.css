@@ -1,3 +1,80 @@
+/* -------my var----*/
+/*---end the var---*/
+body {
+  font-family: 'Montserrat', Verdana,Geneva,sans-serif;
+  height: 4000px;
+  text-transform: capitalize;
+  background: #FFF; }
 
+/******over wrighting bootstrap *****/
+.navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+  padding-top: 1.32vw; }
+
+.navbar-default .navbar-brand {
+  color: #fed136;
+  font-size: 1.716vw;
+  font-family: "Brush Script MT",cursive; }
+  .navbar-default .navbar-brand:hover {
+    color: #fed136; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: transparent; }
+
+.navbar-toggle {
+  padding: 0.594vw 0.66vw;
+  margin-top: 1.32vw;
+  margin-right: 0.99vw;
+  margin-bottom: 0.528vw;
+  border: 1px solid transparent;
+  border-radius: 0.264vw; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase; }
+
+.carousel-inner > .item > img {
+  min-width: 100vw; }
+
+.carousel-control {
+  font-size: 1.32vw; }
+
+/* start css coustem style header *****/
+header .carousel-caption {
+  position: absolute;
+  top: 22.44vw;
+  transform: translateY(-25%);
+  padding: 0; }
+  header .carousel-caption h2 {
+    color: #fff;
+    font-size: 2.64vw;
+    font-family: 'Playfair Display','Times New Roman',Times,Baskerville,Georgia,serif;
+    margin-bottom: 2.64vw;
+    margin-top: 2.64vw;
+    letter-spacing: -1px;
+    font-style: italic;
+    text-align: center; }
+  header .carousel-caption h3 {
+    color: #fff;
+    font-size: 4.95vw;
+    margin-bottom: 2.64vw;
+    margin-top: 2.64vw;
+    letter-spacing: -2px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; }
+  header .carousel-caption button {
+    width: 15.84vw;
+    height: 4.29vw;
+    border-radius: 0.198vw;
+    background-color: #fed136;
+    font-size: 1.188vw;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
