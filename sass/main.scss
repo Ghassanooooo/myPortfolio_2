@@ -3,20 +3,23 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
+$layoutCover: rgba(65,63,62,.3);
 /*---end the var---*/
 body {
+  font-family: 'Aref Ruqaa', serif;
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
   height: 4000px;
   text-transform: capitalize;
   background: #FFF;
-  font-family: 'Cairo', sans-serif;
   // font-size: $fontSizeFix * 1.6;
 }
 /******over wrighting bootstrap *****/
+
 .navbar-default {
   border-color: transparent;
-  background-color: transparent;
-  padding-top: $fontSizeFix * 2;
+  background-color: $layoutCover;
+  padding-top: $fontSizeFix;
+  padding-bottom: $fontSizeFix;
 }
 
 .navbar-default .navbar-brand {
@@ -45,17 +48,37 @@ body {
   border-radius: $fontSizeFix * 0.4;
 }
 
+i {
+  color: #fff;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: $headColor;
   text-transform: uppercase;
 }
 
 .navbar-collapse {
-  max-height: $fontSizeFix * 70 !important;
+  // max-height: $fontSizeFix * 100 !important;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e775;
 }
 
 .carousel-inner > .item > img {
   min-width: 100vw;
+}
+
+.carousel-inner .item:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $layoutCover;
+  z-index: 200;
+  top: 0;
+  left: 0;
 }
 
 .carousel-control {
@@ -67,6 +90,7 @@ header .carousel-caption {
   top: $fontSizeFix * 34;
   transform: translateY(-25%);
   padding: 0;
+  z-index: 300;
 
   h2 {
     color: $headColor;
@@ -91,6 +115,8 @@ header .carousel-caption {
   }
 
   button {
+    outline: 0;
+    border: none;
     width: $fontSizeFix * 24;
     height: $fontSizeFix * 6.5;
     border-radius: $fontSizeFix * 0.3;
