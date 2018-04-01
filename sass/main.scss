@@ -3,8 +3,8 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(65,63,62,.3);
-/*---end the var---*/
+$layoutCover: rgba(65,63,62,.3); /*---end the var---*/
+
 body {
   font-family: 'Aref Ruqaa', serif;
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
@@ -20,22 +20,22 @@ body {
   background-color: $layoutCover;
   padding-top: $fontSizeFix;
   padding-bottom: $fontSizeFix;
-}
 
-.navbar-default .navbar-brand {
-  color: $mediaColor;
-  font-size: $fontSizeFix * 2.6;
-  font-family: "Brush Script MT",cursive;
-
-  &:hover {
+  .navbar-brand {
     color: $mediaColor;
+    font-size: $fontSizeFix * 2.6;
+    font-family: "Brush Script MT",cursive;
+
+    &:hover {
+      @extend %headerColor;
+    }
   }
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #fff;
+  @extend %headerColor;
   background-color: transparent;
 }
 
@@ -46,20 +46,19 @@ body {
   margin-bottom: $fontSizeFix * 0.8;
   border: 1px solid transparent;
   border-radius: $fontSizeFix * 0.4;
-}
 
-i {
-  color: #fff;
+  i {
+    @extend %headerColor;
+  }
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: $headColor;
+  @extend %headerColor;
   text-transform: uppercase;
 }
-
-.navbar-collapse {
-  // max-height: $fontSizeFix * 100 !important;
-}
+// .navbar-collapse {
+//   // max-height: $fontSizeFix * 100 !important;
+// }
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -93,25 +92,25 @@ header .carousel-caption {
   z-index: 300;
 
   h2 {
-    color: $headColor;
+    @extend %headerColor;
     font-size: $fontSizeFix * 4;
     font-family: 'Playfair Display','Times New Roman',Times,Baskerville,Georgia,serif;
     margin-bottom: $fontSizeFix * 4;
     margin-top: $fontSizeFix * 4;
     letter-spacing: -1px;
     font-style: italic;
-    text-align: center;
+    @extend %textCenter;
   }
 
   h3 {
-    color: $headColor;
+    @extend %headerColor;
     font-size: $fontSizeFix * 7.5;
     margin-bottom: $fontSizeFix * 4;
     margin-top: $fontSizeFix * 4;
     letter-spacing: -2px;
     font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+    @extend %textCenter;
+    @extend %uppercase;
   }
 
   button {
@@ -122,8 +121,29 @@ header .carousel-caption {
     border-radius: $fontSizeFix * 0.3;
     background-color: $mediaColor;
     font-size: $fontSizeFix * 1.8;
-    color: $headColor;
     font-weight: bold;
-    text-transform: uppercase;
+    @extend %uppercase;
+    @extend %headerColor;
   }
 }
+/************** end header***************/
+/********* start main body **************/
+.main {
+  section:nth-child(even) {
+    background: #f7f7f7;
+  }
+}
+/********* end main body **************/
+/* start  extend classes pleceholder */
+%textCenter {
+  text-align: center;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%headerColor {
+  color: $headColor;
+}
+/*end  extend classes pleceholder */
