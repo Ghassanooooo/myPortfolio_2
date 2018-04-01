@@ -156,6 +156,23 @@ header .carousel-caption {
       font-size: 16px;
       font-style: italic;
     }
+
+    .row {
+      @extend %textCenter;
+
+      .icon {
+        display: inline-flex;
+        width: 66px;
+        height: 66px;
+        border-radius: 33px;
+        background-color: #ffffff;
+        border: 3px solid #fdd135;
+
+        svg {
+          margin: auto;
+        }
+      }
+    }
   }
 }
 /********* end main body **************/

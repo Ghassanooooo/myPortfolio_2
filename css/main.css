@@ -102,10 +102,19 @@ header .carousel-caption {
   color: #777777;
   font-size: 16px;
   font-style: italic; }
+.main section .row .icon {
+  display: inline-flex;
+  width: 66px;
+  height: 66px;
+  border-radius: 33px;
+  background-color: #ffffff;
+  border: 3px solid #fdd135; }
+  .main section .row .icon svg {
+    margin: auto; }
 
 /********* end main body **************/
 /* start  extend classes pleceholder */
-header .carousel-caption h2, header .carousel-caption h3, .main section:nth-child(even), .main section h2, .main section p.subTitle {
+header .carousel-caption h2, header .carousel-caption h3, .main section:nth-child(even), .main section h2, .main section p.subTitle, .main section .row {
   text-align: center; }
 
 header .carousel-caption h3, header .carousel-caption button {
