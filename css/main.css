@@ -18,7 +18,7 @@ p {
   padding-bottom: 0.66vw; }
   .navbar-default .navbar-brand {
     color: #fed136;
-    font-size: 1.716vw;
+    font-size: 26px;
     font-family: "Brush Script MT",cursive; }
 
 .navbar-default .navbar-nav > .active > a,
@@ -89,32 +89,169 @@ header .carousel-caption {
 
 /************** end header***************/
 /********* start main body **************/
-.main section:nth-child(even) {
-  background: #f7f7f7; }
-.main section h2 {
-  color: #222222;
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 75px;
-  font-weight: bold; }
-.main section p.subTitle {
-  color: #777777;
-  font-size: 16px;
-  font-style: italic; }
-.main section .row .icon {
+.paddingTop {
+  padding-top: 30px; }
+
+.main section {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .main section img {
+    width: 100%;
+    min-height: 100%; }
+  .main section .descript-pro {
+    background: #fff;
+    border: 1px solid transparent; }
+    .main section .descript-pro p {
+      margin-bottom: 15px;
+      margin-top: 5px; }
+  .main section h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+    letter-spacing: 0;
+    color: #222222;
+    font-weight: bold;
+    text-align: center; }
+  .main section p {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #777777;
+    text-align: center; }
+  .main section:nth-child(even):not(:last-child) {
+    background: #f7f7f7; }
+  .main section h2 {
+    color: #222222;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-top: 0; }
+  .main section p.subTitle {
+    color: #777777;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 60px; }
+  .main section .row .icon {
+    display: inline-flex;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    background-color: #ffffff;
+    border: 3px solid #fdd135; }
+    .main section .row .icon:hover {
+      background: #fdd135;
+      transition: 0.5s; }
+    .main section .row .icon:hover .shp0 {
+      fill: #fff;
+      transform: rotate(360deg);
+      transition: 0.5s; }
+    .main section .row .icon svg {
+      margin: auto;
+      fill: #fdd135; }
+.main .about {
+  margin-bottom: 60px; }
+  .main .about div:not(:last-child) {
+    margin-bottom: 60px; }
+  .main .about h4,
+  .main .about p {
+    text-align: right; }
+  .main .about .row:nth-child(even) h4,
+  .main .about .row:nth-child(even) p {
+    text-align: left; }
+  .main .about .imgStory {
+    display: inline-block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #f00; }
+.main .ourTeam a {
+  text-decoration: none; }
+.main .ourTeam img {
+  border-radius: 50%; }
+.main .ourTeam p {
+  margin-bottom: 15px; }
+.main .teamContact {
   display: inline-flex;
-  width: 66px;
-  height: 66px;
-  border-radius: 33px;
-  background-color: #ffffff;
-  border: 3px solid #fdd135; }
-  .main section .row .icon svg {
-    margin: auto; }
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  border: 3px solid #212121;
+  color: #212121; }
+  .main .teamContact i {
+    margin: auto;
+    font-size: 18px; }
+.main .teamDescript {
+  margin-top: 60px;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #777777;
+  font-family: "Roboto Slab";
+  text-align: center; }
+.main .facebook:hover {
+  color: #fff;
+  background: #3b5998;
+  border: none; }
+.main .twitter:hover {
+  color: #fff;
+  background: #00aced;
+  border: none; }
+.main .codepen:hover {
+  color: #fff;
+  background: #212121;
+  border: none; }
+.main .tecnologic {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+section:last-child {
+  background: #000 url("../img/map.svg") 850px; }
+  section:last-child h2 {
+    color: #fff; }
 
 /********* end main body **************/
+/*****footer*********************************************/
+.footer {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .footer a {
+    text-decoration: none; }
+  .footer p {
+    margin-bottom: 0;
+    padding-top: 10px;
+    color: #555555; }
+  .footer span {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff; }
+    .footer span i {
+      margin: auto;
+      font-size: 24px; }
+  .footer .facebook:hover {
+    color: #fff;
+    background: #3b5998;
+    border: none; }
+  .footer .twitter:hover {
+    color: #fff;
+    background: #00aced;
+    border: none; }
+  .footer .codepen:hover {
+    color: #fff;
+    background: #212121b8;
+    border: none; }
+  .footer .github:hover {
+    color: #fff;
+    background: #F05033;
+    border: none; }
+
 /* start  extend classes pleceholder */
-header .carousel-caption h2, header .carousel-caption h3, .main section:nth-child(even), .main section h2, .main section p.subTitle, .main section .row {
+header .carousel-caption h2, header .carousel-caption h3, .main section:nth-child(even):not(:last-child), .main section h2, .main section p.subTitle, .main section .row {
   text-align: center; }
 
 header .carousel-caption h3, header .carousel-caption button {

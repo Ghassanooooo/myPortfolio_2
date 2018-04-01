@@ -3,8 +3,8 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(65,63,62,.3);
-/*---end the var---*/
+$layoutCover: rgba(65,63,62,.3); /*---end the var---*/
+
 body {
   font-family: 'Aref Ruqaa', serif;
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
@@ -18,6 +18,7 @@ p {
   color: #777777;
 }
 /******over wrighting bootstrap *****/
+
 .navbar-default {
   border-color: transparent;
   background-color: $layoutCover;
@@ -26,7 +27,7 @@ p {
 
   .navbar-brand {
     color: $mediaColor;
-    font-size: $fontSizeFix * 2.6;
+    font-size: $mainFontSize* 2.6;
     font-family: "Brush Script MT",cursive;
 
     &:hover {
@@ -87,7 +88,6 @@ p {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
-
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
@@ -133,9 +133,50 @@ header .carousel-caption {
 /************** end header***************/
 /********* start main body **************/
 
+.paddingTop {
+  padding-top: 30px;
+}
+
 .main {
   section {
-    &:nth-child(even) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    img {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    .descript-pro {
+      background: #fff;
+      border: 1px solid transparent;
+
+      p {
+        margin-bottom: 15px;
+        margin-top: 5px;
+      }
+    }
+
+    h4 {
+      margin-top: 15px;
+      margin-bottom: 0;
+      font-size: 18px;
+      letter-spacing: 0;
+      color: #222222;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 0;
+      margin-top: 15px;
+      font-size: 14px;
+      letter-spacing: 0;
+      color: rgb(119,119,119);
+      text-align: center;
+    }
+
+    &:nth-child(even):not(:last-child) {
       @extend %textCenter;
       background: #f7f7f7;
     }
@@ -146,8 +187,8 @@ header .carousel-caption {
       font-size: 40px;
       font-weight: bold;
       letter-spacing: -1px;
-      line-height: 75px;
       font-weight: bold;
+      margin-top: 0;
     }
 
     p.subTitle {
@@ -155,6 +196,8 @@ header .carousel-caption {
       color: #777777;
       font-size: 16px;
       font-style: italic;
+      margin-top: 15px;
+      margin-bottom: 60px;
     }
 
     .row {
@@ -168,16 +211,176 @@ header .carousel-caption {
         background-color: #ffffff;
         border: 3px solid #fdd135;
 
+        &:hover {
+          background: #fdd135;
+          transition: 0.5s;
+        }
+
+        &:hover .shp0 {
+          fill: #fff;
+          transform: rotate(360deg);
+          transition: 0.5s;
+        }
+
         svg {
           margin: auto;
+          fill: #fdd135;
         }
       }
     }
   }
+
+  .about {
+    margin-bottom: 60px;
+
+    div:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    h4,
+    p {
+      text-align: right;
+    }
+
+    .row:nth-child(even) h4,
+    .row:nth-child(even) p {
+      text-align: left;
+    }
+
+    .imgStory {
+      display: inline-block;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      background: #f00;
+    }
+  }
+
+  .ourTeam {
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  .teamContact {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    border: 3px solid #212121;
+    color: #212121;
+
+    i {
+      margin: auto;
+      font-size: 18px;
+    }
+  }
+
+  .teamDescript {
+    margin-top: 60px;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: rgb(119,119,119);
+    font-family: "Roboto Slab";
+    text-align: center;
+  }
+
+  .facebook:hover {
+    color: #fff;
+    background: #3b5998;
+    border: none;
+  }
+
+  .twitter:hover {
+    color: #fff;
+    background: #00aced;
+    border: none;
+  }
+
+  .codepen:hover {
+    color: #fff;
+    background: #212121;
+    border: none;
+  }
+
+  .tecnologic {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+section:last-child {
+  background: #000 url("../img/map.svg") 850px;
+
+  h2 {
+    color: #fff;
+  }
 }
 /********* end main body **************/
-/* start  extend classes pleceholder */
+/*****footer*********************************************/
 
+.footer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    margin-bottom: 0;
+    padding-top: 10px;
+    color: #555555;
+  }
+
+  span {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+
+    i {
+      margin: auto;
+      font-size: 24px;
+    }
+  }
+
+  .facebook:hover {
+    color: #fff;
+    background: #3b5998;
+    border: none;
+  }
+
+  .twitter:hover {
+    color: #fff;
+    background: #00aced;
+    border: none;
+  }
+
+  .codepen:hover {
+    color: #fff;
+    background: #212121b8;
+    border: none;
+  }
+
+  .github:hover {
+    color: #fff;
+    background: #F05033;
+    border: none;
+  }
+}
+/* start  extend classes pleceholder */
 %textCenter {
   text-align: center;
 }
