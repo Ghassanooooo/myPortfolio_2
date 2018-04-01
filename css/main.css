@@ -7,6 +7,9 @@ body {
   text-transform: capitalize;
   background: #FFF; }
 
+p {
+  color: #777777; }
+
 /******over wrighting bootstrap *****/
 .navbar-default {
   border-color: transparent;
@@ -88,10 +91,21 @@ header .carousel-caption {
 /********* start main body **************/
 .main section:nth-child(even) {
   background: #f7f7f7; }
+.main section h2 {
+  color: #222222;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 75px;
+  font-weight: bold; }
+.main section p.subTitle {
+  color: #777777;
+  font-size: 16px;
+  font-style: italic; }
 
 /********* end main body **************/
 /* start  extend classes pleceholder */
-header .carousel-caption h2, header .carousel-caption h3 {
+header .carousel-caption h2, header .carousel-caption h3, .main section:nth-child(even), .main section h2, .main section p.subTitle {
   text-align: center; }
 
 header .carousel-caption h3, header .carousel-caption button {

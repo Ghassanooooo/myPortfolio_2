@@ -3,8 +3,8 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(65,63,62,.3); /*---end the var---*/
-
+$layoutCover: rgba(65,63,62,.3);
+/*---end the var---*/
 body {
   font-family: 'Aref Ruqaa', serif;
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
@@ -13,8 +13,11 @@ body {
   background: #FFF;
   // font-size: $fontSizeFix * 1.6;
 }
-/******over wrighting bootstrap *****/
 
+p {
+  color: #777777;
+}
+/******over wrighting bootstrap *****/
 .navbar-default {
   border-color: transparent;
   background-color: $layoutCover;
@@ -84,6 +87,7 @@ body {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
+
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
@@ -128,13 +132,35 @@ header .carousel-caption {
 }
 /************** end header***************/
 /********* start main body **************/
+
 .main {
-  section:nth-child(even) {
-    background: #f7f7f7;
+  section {
+    &:nth-child(even) {
+      @extend %textCenter;
+      background: #f7f7f7;
+    }
+
+    h2 {
+      @extend %textCenter;
+      color: #222222;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: -1px;
+      line-height: 75px;
+      font-weight: bold;
+    }
+
+    p.subTitle {
+      @extend %textCenter;
+      color: #777777;
+      font-size: 16px;
+      font-style: italic;
+    }
   }
 }
 /********* end main body **************/
 /* start  extend classes pleceholder */
+
 %textCenter {
   text-align: center;
 }
