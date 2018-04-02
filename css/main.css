@@ -186,13 +186,13 @@ header .carousel-caption {
     .main .about .thumbnail img {
       border-radius: 50%; }
   .main .about .imgStory {
-    display: inline-flex;
+    display: inline-block;
     border-radius: 50%;
     width: 250px;
     height: 250px;
     background: #fed136; }
     .main .about .imgStory span {
-      margin: auto; }
+      line-height: 250px; }
 .main .ourTeam a {
   text-decoration: none; }
 .main .ourTeam .thumbnail {
@@ -252,6 +252,16 @@ form textarea[placeholder] {
   resize: none; }
 form .textarea {
   height: 166px !important; }
+form button {
+  width: 240px;
+  height: 65px;
+  border-radius: 3px;
+  background-color: #fdd135;
+  border: 0 !important;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 /********* end main body **************/
 /*****footer*********************************************/
