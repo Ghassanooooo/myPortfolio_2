@@ -1,5 +1,8 @@
 /* -------my var----*/
 /*---end the var---*/
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Aref Ruqaa', serif;
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
@@ -7,13 +10,16 @@ body {
   text-transform: capitalize;
   background: #FFF; }
 
+a {
+  text-decoration: none; }
+
 p {
   color: #777777; }
 
 /******over wrighting bootstrap *****/
 .navbar-default {
   border-color: transparent;
-  background-color: rgba(65, 63, 62, 0.3);
+  background-color: rgba(34, 34, 34, 0.4);
   padding-top: 0.66vw;
   padding-bottom: 0.66vw; }
   .navbar-default .navbar-brand {
@@ -37,19 +43,27 @@ p {
 .navbar-default .navbar-nav > li > a {
   text-transform: uppercase; }
 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fed136; }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: #e7e7e775; }
 
+.carousel-inner {
+  background: #000; }
+
 .carousel-inner > .item > img {
-  min-width: 100vw; }
+  min-width: 100vw;
+  opacity: 0.6; }
 
 .carousel-inner .item:before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(65, 63, 62, 0.3);
+  background: rgba(34, 34, 34, 0.4);
   z-index: 200;
   top: 0;
   left: 0; }
@@ -69,13 +83,11 @@ header .carousel-caption {
     font-family: 'Playfair Display','Times New Roman',Times,Baskerville,Georgia,serif;
     margin-bottom: 2.64vw;
     margin-top: 2.64vw;
-    letter-spacing: -1px;
     font-style: italic; }
   header .carousel-caption h3 {
     font-size: 4.95vw;
     margin-bottom: 2.64vw;
     margin-top: 2.64vw;
-    letter-spacing: -2px;
     font-weight: bold; }
   header .carousel-caption button {
     outline: 0;
@@ -134,6 +146,8 @@ header .carousel-caption {
     font-style: italic;
     margin-top: 15px;
     margin-bottom: 60px; }
+  .main section .paddingBottom {
+    padding-bottom: 50px; }
   .main section .row .icon {
     display: inline-flex;
     width: 66px;
@@ -169,6 +183,8 @@ header .carousel-caption {
     background: #f00; }
 .main .ourTeam a {
   text-decoration: none; }
+.main .ourTeam .thumbnail {
+  border-radius: 50%; }
 .main .ourTeam img {
   border-radius: 50%; }
 .main .ourTeam p {
@@ -220,7 +236,7 @@ section:last-child {
   .footer a {
     text-decoration: none; }
   .footer p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-top: 10px;
     color: #555555; }
   .footer span {
@@ -263,5 +279,14 @@ header .carousel-caption h3, header .carousel-caption button {
   color: #fff; }
 
 /*end  extend classes pleceholder */
+/********** start media *************/
+@media (max-width: 768px) {
+  .main .about h4,
+  .main .about p {
+    text-align: center !important; } }
+@media (max-width: 990px) {
+  .main .about .row:nth-child(even) h4,
+  .main .about .row:nth-child(even) p {
+    text-align: right; } }
 
 /*# sourceMappingURL=main.css.map */

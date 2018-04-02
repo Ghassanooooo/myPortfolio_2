@@ -3,7 +3,11 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(65,63,62,.3); /*---end the var---*/
+$layoutCover: rgba(34,34,34,.4);
+/*---end the var---*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Aref Ruqaa', serif;
@@ -12,6 +16,10 @@ body {
   text-transform: capitalize;
   background: #FFF;
   // font-size: $fontSizeFix * 1.6;
+}
+
+a {
+  text-decoration: none;
 }
 
 p {
@@ -60,6 +68,11 @@ p {
   @extend %headerColor;
   text-transform: uppercase;
 }
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: $mediaColor;
+}
 // .navbar-collapse {
 //   // max-height: $fontSizeFix * 100 !important;
 // }
@@ -69,8 +82,13 @@ p {
   border-color: #e7e7e775;
 }
 
+.carousel-inner {
+  background: #000;
+}
+
 .carousel-inner > .item > img {
   min-width: 100vw;
+  opacity: 0.6;
 }
 
 .carousel-inner .item:before {
@@ -101,7 +119,6 @@ header .carousel-caption {
     font-family: 'Playfair Display','Times New Roman',Times,Baskerville,Georgia,serif;
     margin-bottom: $fontSizeFix * 4;
     margin-top: $fontSizeFix * 4;
-    letter-spacing: -1px;
     font-style: italic;
     @extend %textCenter;
   }
@@ -111,7 +128,6 @@ header .carousel-caption {
     font-size: $fontSizeFix * 7.5;
     margin-bottom: $fontSizeFix * 4;
     margin-top: $fontSizeFix * 4;
-    letter-spacing: -2px;
     font-weight: bold;
     @extend %textCenter;
     @extend %uppercase;
@@ -200,6 +216,10 @@ header .carousel-caption {
       margin-bottom: 60px;
     }
 
+    .paddingBottom {
+      padding-bottom: 50px;
+    }
+
     .row {
       @extend %textCenter;
 
@@ -259,6 +279,10 @@ header .carousel-caption {
   .ourTeam {
     a {
       text-decoration: none;
+    }
+
+    .thumbnail {
+      border-radius: 50%;
     }
 
     img {
@@ -337,7 +361,7 @@ section:last-child {
   }
 
   p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-top: 10px;
     color: #555555;
   }
@@ -393,3 +417,24 @@ section:last-child {
   color: $headColor;
 }
 /*end  extend classes pleceholder */
+/********** start media *************/
+@media(max-width:768px) {
+  .main {
+    .about {
+      h4,
+      p {
+        text-align: center !important;
+      }
+    }
+  }
+}
+@media(max-width:990px) {
+  .main {
+    .about {
+      .row:nth-child(even) h4,
+      .row:nth-child(even) p {
+        text-align: right;
+      }
+    }
+  }
+}
