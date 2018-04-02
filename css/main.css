@@ -56,7 +56,8 @@ p {
 
 .carousel-inner > .item > img {
   min-width: 100vw;
-  opacity: 0.6; }
+  opacity: 0.6;
+  background-size: cover; }
 
 .carousel-inner .item:before {
   content: '';
@@ -165,6 +166,8 @@ header .carousel-caption {
     .main section .row .icon svg {
       margin: auto;
       fill: #fdd135; }
+.main .protfolio .thumbnail {
+  margin-bottom: 0; }
 .main .about {
   margin-bottom: 60px; }
   .main .about div:not(:last-child) {
@@ -175,16 +178,28 @@ header .carousel-caption {
   .main .about .row:nth-child(even) h4,
   .main .about .row:nth-child(even) p {
     text-align: left; }
-  .main .about .imgStory {
+  .main .about .thumbnail {
     display: inline-block;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    background: #f00; }
+    padding: 5px;
+    background: #f1f1f1; }
+    .main .about .thumbnail img {
+      border-radius: 50%; }
+  .main .about .imgStory {
+    display: inline-flex;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background: #fed136; }
+    .main .about .imgStory span {
+      margin: auto; }
 .main .ourTeam a {
   text-decoration: none; }
 .main .ourTeam .thumbnail {
-  border-radius: 50%; }
+  display: inline-block;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px; }
 .main .ourTeam img {
   border-radius: 50%; }
 .main .ourTeam p {
@@ -224,9 +239,19 @@ header .carousel-caption {
   margin-bottom: 50px; }
 
 section:last-child {
-  background: #000 url("../img/map.svg") 850px; }
+  background: #000 url("../img/map.svg") fixed 850px; }
   section:last-child h2 {
     color: #fff; }
+
+/****************************** contact form  **********************************/
+form input[placeholder],
+form textarea[placeholder] {
+  text-transform: uppercase;
+  color: #bbbbbb;
+  font-weight: bold;
+  resize: none; }
+form .textarea {
+  height: 166px !important; }
 
 /********* end main body **************/
 /*****footer*********************************************/

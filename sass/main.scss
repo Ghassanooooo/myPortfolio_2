@@ -89,6 +89,7 @@ p {
 .carousel-inner > .item > img {
   min-width: 100vw;
   opacity: 0.6;
+  background-size: cover;
 }
 
 .carousel-inner .item:before {
@@ -250,6 +251,12 @@ header .carousel-caption {
     }
   }
 
+  .protfolio {
+    .thumbnail {
+      margin-bottom: 0;
+    }
+  }
+
   .about {
     margin-bottom: 60px;
 
@@ -267,12 +274,27 @@ header .carousel-caption {
       text-align: left;
     }
 
-    .imgStory {
+    .thumbnail {
       display: inline-block;
       border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      background: #f00;
+      padding: 5px;
+      background: #f1f1f1;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .imgStory {
+      display: inline-flex;
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      background: $mediaColor;
+
+      span {
+        margin: auto;
+      }
     }
   }
 
@@ -282,7 +304,10 @@ header .carousel-caption {
     }
 
     .thumbnail {
+      display: inline-block;
       border-radius: 50%;
+      width: 300px;
+      height: 300px;
     }
 
     img {
@@ -343,10 +368,25 @@ header .carousel-caption {
 }
 
 section:last-child {
-  background: #000 url("../img/map.svg") 850px;
+  background: #000 url("../img/map.svg") fixed 850px;
 
   h2 {
     color: #fff;
+  }
+}
+/****************************** contact form  **********************************/
+
+form {
+  input[placeholder],
+  textarea[placeholder] {
+    text-transform: uppercase;
+    color: #bbbbbb;
+    font-weight: bold;
+    resize: none;
+  }
+
+  .textarea {
+    height: 166px !important;
   }
 }
 /********* end main body **************/
