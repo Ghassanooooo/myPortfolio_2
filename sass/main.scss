@@ -1,10 +1,10 @@
-/* -------my var----*/
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa|Montserrat|Playfair+Display+SC'); /* -------my var----*/
 $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(34,34,34,.4); /*---end the var---*/
-
+$layoutCover: rgba(34,34,34,.4);
+/*---end the var---*/
 * {
   box-sizing: border-box;
 }
@@ -26,6 +26,7 @@ p {
   color: #777777;
 }
 /******over wrighting bootstrap *****/
+
 .navbar-default {
   border-color: transparent;
   background-color: $layoutCover;
@@ -36,6 +37,8 @@ p {
     color: $mediaColor;
     font-size: $mainFontSize* 2.6;
     font-family: "Brush Script MT",cursive;
+    margin-top: 0;
+    margin-bottom: 0;
 
     &:hover {
       @extend %headerColor;
@@ -106,7 +109,6 @@ p {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
-
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
@@ -117,7 +119,7 @@ header .carousel-caption {
   h2 {
     @extend %headerColor;
     font-size: $fontSizeFix * 4;
-    font-family: 'Playfair Display','Times New Roman',Times,Baskerville,Georgia,serif;
+    font-family: 'Playfair Display SC','Times New Roman',Times,Baskerville,Georgia,serif;
     margin-bottom: $fontSizeFix * 4;
     margin-top: $fontSizeFix * 4;
     font-style: italic;
@@ -149,6 +151,7 @@ header .carousel-caption {
 }
 /************** end header***************/
 /********* start main body **************/
+
 .paddingTop {
   padding-top: 30px;
 }
@@ -374,6 +377,7 @@ section:last-child {
   }
 }
 /****************************** contact form  **********************************/
+
 form {
   input[placeholder],
   textarea[placeholder] {
@@ -401,6 +405,7 @@ form {
 }
 /********* end main body **************/
 /*****footer*********************************************/
+
 .footer {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -443,7 +448,7 @@ form {
 
   .codepen:hover {
     color: #fff;
-    background: #212121b8;
+    background: #9f9a96;
     border: none;
   }
 
@@ -454,7 +459,6 @@ form {
   }
 }
 /* start  extend classes pleceholder */
-
 %textCenter {
   text-align: center;
 }
