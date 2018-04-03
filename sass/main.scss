@@ -3,8 +3,8 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(34,34,34,.4);
-/*---end the var---*/
+$layoutCover: rgba(34,34,34,.6); /*---end the var---*/
+
 * {
   box-sizing: border-box;
 }
@@ -26,6 +26,7 @@ p {
   color: #777777;
 }
 /******over wrighting bootstrap *****/
+
 nav {
   transition: 1s;
 }
@@ -38,8 +39,8 @@ h1 a {
 .navScroll {
   background: rgba(34, 34, 34, 0.8) !important;
   box-shadow: 0 0 5px #000;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
 }
 
 ul.nav li {
@@ -68,7 +69,7 @@ ul.nav li:hover {
 .navbar-default {
   border-color: transparent;
   background-color: transparent;
-  padding-top: $fontSizeFix;
+  padding-top: $fontSizeFix * 2;
   padding-bottom: $fontSizeFix;
 
   .navbar-brand {
@@ -148,6 +149,7 @@ ul.nav li:hover {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
+
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
@@ -195,7 +197,6 @@ header .carousel-caption {
 }
 /************** end header***************/
 /********* start main body **************/
-
 .paddingTop {
   padding-top: 30px;
 }
@@ -378,7 +379,7 @@ header .carousel-caption {
     border: 3px solid #212121;
     color: #212121;
     text-align: center;
-    transition: background 0.5s;
+    transition: 0.5s;
 
     i {
       line-height: 40px;
@@ -399,19 +400,19 @@ header .carousel-caption {
   .facebook:hover {
     color: #fff;
     background: #3b5998;
-    border: none;
+    border: #212121;
   }
 
   .twitter:hover {
     color: #fff;
     background: #00aced;
-    border: none;
+    border: #212121;
   }
 
   .codepen:hover {
     color: #fff;
     background: #212121;
-    border: none;
+    border: #212121;
   }
 
   .tecnologic {
@@ -428,7 +429,6 @@ section:last-child {
   }
 }
 /****************************** contact form  **********************************/
-
 form {
   input[placeholder],
   textarea[placeholder] {
@@ -456,7 +456,6 @@ form {
 }
 /********* end main body **************/
 /*****footer*********************************************/
-
 .footer {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -479,6 +478,7 @@ form {
     background-color: #000;
     color: #fff;
     text-align: center;
+    transition: all 0.5s;
 
     i {
       margin: auto;
@@ -490,28 +490,29 @@ form {
   .facebook:hover {
     color: #fff;
     background: #3b5998;
-    border: none;
+    border: transparent;
   }
 
   .twitter:hover {
     color: #fff;
     background: #00aced;
-    border: none;
+    border: transparent;
   }
 
   .codepen:hover {
-    color: #fff;
     background: #9f9a96;
-    border: none;
+    color: #fff;
+    border: transparent;
   }
 
   .github:hover {
     color: #fff;
     background: #F05033;
-    border: none;
+    border: transparent;
   }
 }
 /* start  extend classes pleceholder */
+
 %textCenter {
   text-align: center;
 }
