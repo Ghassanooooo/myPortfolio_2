@@ -1,13 +1,19 @@
 $(document).ready(function() {
+
   $(window).scroll(function() {
-    if ($(".navbar-default").offset().top > 100) {
+
+    if ($(window).scrollTop()) {
+
       $(".navbar-fixed-top").addClass('navScroll');
+      $("ul.nav li").addClass('listScroll');
     } else {
       $(".navbar-fixed-top").removeClass('navScroll');
+      $("ul.nav li").removeClass('listScroll');
     }
-  });
 
-  $(".nav li a").click(function(e) {
+  });
+  // scroll top fix
+  $(".nav li a, .carousel-caption button a").click(function(e) {
     console.log($(this).data('scroll'));
     $("html, body").animate({
       scrollTop: $($(this).data('scroll')).offset().top

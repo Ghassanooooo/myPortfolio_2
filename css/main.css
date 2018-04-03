@@ -5,7 +5,6 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Aref Ruqaa', serif;
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
   height: 4000px;
   text-transform: capitalize;
@@ -18,11 +17,32 @@ p {
   color: #777777; }
 
 /******over wrighting bootstrap *****/
+nav {
+  transition: 1s; }
+
 .navScroll {
-  background-color: rgba(34, 34, 34, 0.5) !important; }
+  background: rgba(34, 34, 34, 0.8) !important;
+  box-shadow: 0 0 5px #000;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+ul.nav li {
+  transition: 1s; }
+
+ul.nav li:hover {
+  background: #a9a9a96b;
+  border-radius: 3px; }
+
+.listScroll {
+  background: #696767de;
+  margin-right: 20px;
+  border-radius: 3px; }
 
 .in {
   background-color: rgba(34, 34, 34, 0.5) !important; }
+
+.in li {
+  background: transparent; }
 
 .navbar-default {
   border-color: transparent;
@@ -64,6 +84,7 @@ p {
   background: #000; }
 
 .carousel-inner > .item > img {
+  min-width: 100vh;
   min-width: 100vw;
   opacity: 0.6;
   background-size: cover; }
@@ -108,6 +129,9 @@ header .carousel-caption {
     background-color: #fed136;
     font-size: 1.188vw;
     font-weight: bold; }
+    header .carousel-caption button a {
+      text-decoration: none;
+      color: #fff; }
 
 /************** end header***************/
 /********* start main body **************/
@@ -179,6 +203,8 @@ header .carousel-caption {
   margin-bottom: 0; }
 .main .about {
   margin-bottom: 60px; }
+  .main .about .move1 div {
+    transition: 1s; }
   .main .about div:not(:last-child) {
     margin-bottom: 60px; }
   .main .about h4,

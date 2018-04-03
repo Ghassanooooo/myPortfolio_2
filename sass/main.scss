@@ -3,14 +3,14 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(34,34,34,.4);
-/*---end the var---*/
+$layoutCover: rgba(34,34,34,.4); /*---end the var---*/
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Aref Ruqaa', serif;
+  // font-family: 'Aref Ruqaa', serif;
   font-family: 'Montserrat', Verdana,Geneva,sans-serif;
   height: 4000px;
   text-transform: capitalize;
@@ -26,12 +26,39 @@ p {
   color: #777777;
 }
 /******over wrighting bootstrap *****/
+
+nav {
+  transition: 1s;
+}
+
 .navScroll {
-  background-color: rgba(34, 34, 34, 0.5) !important;
+  background: rgba(34, 34, 34, 0.8) !important;
+  box-shadow: 0 0 5px #000;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+ul.nav li {
+  transition: 1s;
+}
+
+ul.nav li:hover {
+  background: #a9a9a96b;
+  border-radius: 3px;
+}
+
+.listScroll {
+  background: #696767de;
+  margin-right: 20px;
+  border-radius: 3px;
 }
 
 .in {
   background-color: rgba(34, 34, 34, 0.5) !important;
+}
+
+.in li {
+  background: transparent;
 }
 
 .navbar-default {
@@ -96,6 +123,7 @@ p {
 }
 
 .carousel-inner > .item > img {
+  min-width: 100vh;
   min-width: 100vw;
   opacity: 0.6;
   background-size: cover;
@@ -116,6 +144,7 @@ p {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
+
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
@@ -154,11 +183,15 @@ header .carousel-caption {
     font-weight: bold;
     @extend %uppercase;
     @extend %headerColor;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
 /************** end header***************/
 /********* start main body **************/
-
 .paddingTop {
   padding-top: 30px;
 }
@@ -268,6 +301,10 @@ header .carousel-caption {
 
   .about {
     margin-bottom: 60px;
+
+    .move1 div {
+      transition: 1s;
+    }
 
     div:not(:last-child) {
       margin-bottom: 60px;
@@ -384,7 +421,6 @@ section:last-child {
   }
 }
 /****************************** contact form  **********************************/
-
 form {
   input[placeholder],
   textarea[placeholder] {
@@ -412,7 +448,6 @@ form {
 }
 /********* end main body **************/
 /*****footer*********************************************/
-
 .footer {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -466,6 +501,7 @@ form {
   }
 }
 /* start  extend classes pleceholder */
+
 %textCenter {
   text-align: center;
 }
