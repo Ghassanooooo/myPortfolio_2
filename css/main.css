@@ -20,6 +20,10 @@ p {
 nav {
   transition: 1s; }
 
+h1 a {
+  text-decoration: none !important;
+  color: #fed136 !important; }
+
 .navScroll {
   background: rgba(34, 34, 34, 0.8) !important;
   box-shadow: 0 0 5px #000;
@@ -240,14 +244,17 @@ header .carousel-caption {
 .main .ourTeam p {
   margin-bottom: 15px; }
 .main .teamContact {
-  display: inline-flex;
+  display: inline-block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #f9f9f9;
   border: 3px solid #212121;
-  color: #212121; }
+  color: #212121;
+  text-align: center;
+  transition: background 0.5s; }
   .main .teamContact i {
+    line-height: 40px;
     margin: auto;
     font-size: 18px; }
 .main .teamDescript {
@@ -310,14 +317,16 @@ form button {
     padding-top: 10px;
     color: #555555; }
   .footer span {
-    display: inline-flex;
+    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #000;
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
     .footer span i {
       margin: auto;
+      line-height: 40px;
       font-size: 24px; }
   .footer .facebook:hover {
     color: #fff;

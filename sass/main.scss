@@ -3,8 +3,8 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(34,34,34,.4); /*---end the var---*/
-
+$layoutCover: rgba(34,34,34,.4);
+/*---end the var---*/
 * {
   box-sizing: border-box;
 }
@@ -26,9 +26,13 @@ p {
   color: #777777;
 }
 /******over wrighting bootstrap *****/
-
 nav {
   transition: 1s;
+}
+
+h1 a {
+  text-decoration: none !important;
+  color: $mediaColor !important;
 }
 
 .navScroll {
@@ -144,7 +148,6 @@ ul.nav li:hover {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
-
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
@@ -192,6 +195,7 @@ header .carousel-caption {
 }
 /************** end header***************/
 /********* start main body **************/
+
 .paddingTop {
   padding-top: 30px;
 }
@@ -366,15 +370,18 @@ header .carousel-caption {
   }
 
   .teamContact {
-    display: inline-flex;
+    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #f9f9f9;
     border: 3px solid #212121;
     color: #212121;
+    text-align: center;
+    transition: background 0.5s;
 
     i {
+      line-height: 40px;
       margin: auto;
       font-size: 18px;
     }
@@ -421,6 +428,7 @@ section:last-child {
   }
 }
 /****************************** contact form  **********************************/
+
 form {
   input[placeholder],
   textarea[placeholder] {
@@ -448,6 +456,7 @@ form {
 }
 /********* end main body **************/
 /*****footer*********************************************/
+
 .footer {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -463,15 +472,17 @@ form {
   }
 
   span {
-    display: inline-flex;
+    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #000;
     color: #fff;
+    text-align: center;
 
     i {
       margin: auto;
+      line-height: 40px;
       font-size: 24px;
     }
   }
@@ -501,7 +512,6 @@ form {
   }
 }
 /* start  extend classes pleceholder */
-
 %textCenter {
   text-align: center;
 }
