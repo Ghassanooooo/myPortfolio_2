@@ -241,6 +241,8 @@ header .carousel-caption {
   border-radius: 50%;
   width: 300px;
   height: 300px; }
+  .main .ourTeam .thumbnail i {
+    line-height: 300px; }
 .main .ourTeam img {
   border-radius: 50%; }
 .main .ourTeam p {
