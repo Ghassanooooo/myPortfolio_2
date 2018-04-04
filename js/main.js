@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+  // nicescroll
+  $("body").niceScroll({
+    cursorcolor: "#fed136",
+    cursorminheight: 200,
+    horizrailenabled: false,
+    cursorwidth: "10px"
+
+  });
+
   $(window).scroll(function() {
 
     if ($(window).scrollTop()) {
@@ -13,7 +22,7 @@ $(document).ready(function() {
 
   });
   // scroll top fix
-  $(".nav li a, .carousel-caption button a ,h1 a").click(function(e) {
+  $(".nav li a, .carousel-caption .buttonHeder a ,h1 a").click(function(e) {
     console.log($(this).data('scroll'));
     $("html, body").animate({
       scrollTop: $($(this).data('scroll')).offset().top

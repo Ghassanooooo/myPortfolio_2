@@ -124,7 +124,7 @@ header .carousel-caption {
     margin-bottom: 2.64vw;
     margin-top: 2.64vw;
     font-weight: bold; }
-  header .carousel-caption button {
+  header .carousel-caption .buttonHeder {
     outline: 0;
     border: none;
     width: 15.84vw;
@@ -132,8 +132,10 @@ header .carousel-caption {
     border-radius: 0.198vw;
     background-color: #fed136;
     font-size: 1.188vw;
-    font-weight: bold; }
-    header .carousel-caption button a {
+    font-weight: bold;
+    margin: auto;
+    line-height: 4.29vw; }
+    header .carousel-caption .buttonHeder a {
       text-decoration: none;
       color: #fff; }
 
@@ -350,12 +352,12 @@ form button {
 header .carousel-caption h2, header .carousel-caption h3, .main section:nth-child(even):not(:last-child), .main section h2, .main section p.subTitle, .main section .row {
   text-align: center; }
 
-header .carousel-caption h3, header .carousel-caption button {
+header .carousel-caption h3, header .carousel-caption .buttonHeder {
   text-transform: uppercase; }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover, .navbar-toggle i, .navbar-default .navbar-nav > li > a, header .carousel-caption h2, header .carousel-caption h3, header .carousel-caption button {
+.navbar-default .navbar-nav > .active > a:hover, .navbar-toggle i, .navbar-default .navbar-nav > li > a, header .carousel-caption h2, header .carousel-caption h3, header .carousel-caption .buttonHeder {
   color: #fff; }
 
 /*end  extend classes pleceholder */
