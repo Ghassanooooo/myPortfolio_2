@@ -9,6 +9,15 @@ $(document).ready(function() {
 
   });
 
+  $(".nav li a").click(function() {
+    $(".nav li").addClass('wow bounceIn');
+
+  });
+
+  $(".nav li a").on("mouseleave", function() {
+    $(".nav li").removeClass('wow bounceIn');
+  });
+
   $(window).scroll(function() {
 
     if ($(window).scrollTop()) {
