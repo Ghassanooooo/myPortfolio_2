@@ -3,8 +3,8 @@ $fontSizeFix: 0.66vw;
 $mediaColor: #fed136;
 $headColor: #fff;
 $mainFontSize: 10px;
-$layoutCover: rgba(34,34,34,.6); /*---end the var---*/
-
+$layoutCover: rgba(34,34,34,.6);
+/*---end the var---*/
 * {
   box-sizing: border-box;
 }
@@ -26,7 +26,6 @@ p {
   color: #777777;
 }
 /******over wrighting bootstrap *****/
-
 nav {
   transition: 1s;
 }
@@ -149,7 +148,6 @@ ul.nav li:hover {
   font-size: $fontSizeFix * 2;
 }
 /* start css coustem style header *****/
-
 header .carousel-caption {
   position: absolute;
   top: $fontSizeFix * 34;
@@ -199,6 +197,7 @@ header .carousel-caption {
 }
 /************** end header***************/
 /********* start main body **************/
+
 .paddingTop {
   padding-top: 30px;
 }
@@ -435,6 +434,7 @@ section:last-child {
   }
 }
 /****************************** contact form  **********************************/
+
 form {
   input[placeholder],
   textarea[placeholder] {
@@ -462,6 +462,7 @@ form {
 }
 /********* end main body **************/
 /*****footer*********************************************/
+
 .footer {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -518,7 +519,6 @@ form {
   }
 }
 /* start  extend classes pleceholder */
-
 %textCenter {
   text-align: center;
 }

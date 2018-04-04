@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  // wow.js
+  wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 250,
+    mobile: false,
+    live: true
+  })
+  wow.init();
 
   // nicescroll
   $("body").niceScroll({
