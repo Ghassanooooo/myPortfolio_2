@@ -1,0 +1,24 @@
+form button {
+  background: #efe1af; }
+form .alert {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: none; }
+form .msgAst:after {
+  top: 25px; }
+form .ast:after {
+  top: 26px; }
+
+/***************** extend ::::::::::::: */
+form .msgAst, form .ast {
+  position: relative; }
+
+form .msgAst:after, form .ast:after {
+  right: 10px;
+  color: red;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  content: "*";
+  position: absolute; }
+
+/*# sourceMappingURL=form.css.map */

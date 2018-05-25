@@ -1,9 +1,24 @@
 $(document).ready(function() {
+  // $(window).load(function() {
+  $('.loadingScreen  span').fadeOut(500, function() {
+    $('.loadingScreen .lds-spinner').fadeOut(400, function() {
+      $(this).parent().fadeOut(200, function() {
+        $('.loadingScreen').removeClass('loadingScreen')
+      });
+    });
+  });
+  // });
+
+
+  $('.carousel').carousel({
+    interval: 6000
+  });
+
   // wow.js
   wow = new WOW({
     boxClass: 'wow',
     animateClass: 'animated',
-    offset: 250,
+    offset: 200,
     mobile: false,
     live: true
   })
@@ -18,13 +33,13 @@ $(document).ready(function() {
 
   });
 
-  $(".nav li a").click(function() {
-    $(".nav li").addClass('wow bounceIn');
+  $(".nav li").click(function() {
+    $(this).addClass('wow bounceIn');
 
   });
 
-  $(".nav li a").on("mouseleave", function() {
-    $(".nav li").removeClass('wow bounceIn');
+  $(".nav li").on("mouseleave", function() {
+    $(this).removeClass('wow bounceIn');
   });
 
   $(window).scroll(function() {
@@ -48,4 +63,7 @@ $(document).ready(function() {
     e.preventDefault();
 
   });
+
+
+
 });
