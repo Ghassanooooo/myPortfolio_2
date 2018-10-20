@@ -1,0 +1,45 @@
+form {
+  // input {
+  //   text-transform: lowercase !important;
+  // }
+  button {
+    background: #efe1af;
+  }
+
+  .alert {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+
+  .msgAst {
+    @extend %astP;
+
+    &:after {
+      top: 25px;
+      @extend %astC;
+    }
+  }
+
+  .ast {
+    @extend %astP;
+
+    &:after {
+      @extend %astC;
+      top: 26px;
+    }
+  }
+}
+/***************** extend ::::::::::::: */
+%astP {
+  position: relative;
+}
+
+%astC {
+  right: 10px;
+  color: red;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  content: "*";
+  position: absolute;
+}
